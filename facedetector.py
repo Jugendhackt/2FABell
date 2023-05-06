@@ -4,7 +4,7 @@ import cv2
 
 capture = cv2.VideoCapture(0)
 
-cascade = cv2.CascadeClassifier("haarcascade_frontalface_from_Github.xml")
+cascade = cv2.CascadeClassifier("haarcascade_frontalface_from_github.xml")
 
 faces = ()
 
