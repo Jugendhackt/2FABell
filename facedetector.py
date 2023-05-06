@@ -13,8 +13,7 @@ while faces == ():
     print(camera)
     im_gray = cv2.cvtColor(camera[1], cv2.COLOR_BGR2GRAY)
     faces = cascade.detectMultiScale(im_gray)
-    print("hallo", faces)
-
+    print("faces", faces)                       #Erkennt die Gesichter
 
     #print(camera[1].empty())
 
@@ -22,12 +21,7 @@ for x, y, width, height in faces:
     cv2.rectangle(im_gray, (x,y), (x + width, y + height), color=(0,0, 255), thickness=5)
 
 cv2.imshow("PEGASUS", im_gray)
-cv2.waitKey(0)
-
-ende=input()
-
-if ende == 0:
-    q
+cv2.waitKey(10000)
 
 capture.release()
 cv2.destroyAllWindows()
