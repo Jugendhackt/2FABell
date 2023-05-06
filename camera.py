@@ -1,6 +1,6 @@
 #pip install opencv-python
 
-import cv2
+import cv2                              #to import the fetures
 
 img = cv2.VideoCapture(0)               #deffinge the image
 while True:
