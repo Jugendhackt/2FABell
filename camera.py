@@ -1,4 +1,6 @@
+#pip install opencv-python
 import cv2
+
 img = cv2.VideoCapture(0)
 while True:
     ret, frame = img.read()
