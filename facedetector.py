@@ -24,8 +24,10 @@ for x, y, width, height in faces:
 cv2.imshow("PEGASUS", im_gray)
 cv2.waitKey(0)
 
+ende=input()
 
-
+if ende == 0:
+    q
 
 capture.release()
 cv2.destroyAllWindows()
